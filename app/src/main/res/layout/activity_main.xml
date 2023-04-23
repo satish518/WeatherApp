@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:layout_marginBottom="@dimen/_15sdp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/searchCityEdt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter US City Name" />
+
+        <Button
+            android:id="@+id/searchBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_green_dark"
+            android:text="Search"
+            android:textColor="@color/white"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:paddingRight="@dimen/_20sdp"
+            android:paddingLeft="@dimen/_20sdp"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingBottom="@dimen/_5sdp"
+            android:layout_gravity="center_horizontal"
+            />
+
+
+        <LinearLayout
+            android:id="@+id/detailsLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/_15sdp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Weather Details"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/_10sdp"
+                />
+
+            <ImageView
+                android:id="@+id/weatherImgView"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_100sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:layout_gravity="center_horizontal"/>
+
+            <TextView
+                android:id="@+id/cityNameTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="City Name"
+                android:textStyle="normal"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                />
+
+            <TextView
+                android:id="@+id/latlngTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Coordinates: "
+                android:textStyle="normal"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                />
+
+            <TextView
+                android:id="@+id/weatherTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Weather"
+                android:textStyle="normal"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                />
+
+            <TextView
+                android:id="@+id/tempNameTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Temperature"
+                android:textStyle="normal"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                />
+
+            <TextView
+                android:id="@+id/visibilityTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Visibility"
+                android:textStyle="normal"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                />
+
+            <TextView
+                android:id="@+id/windTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Wind"
+                android:textStyle="normal"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                />
+
+            <TextView
+                android:id="@+id/sunriseTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sunrise"
+                android:textStyle="normal"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                />
+
+            <TextView
+                android:id="@+id/sunsetTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sunset"
+                android:textStyle="normal"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                />
+
+            <TextView
+                android:id="@+id/timezoneTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Timezone"
+                android:textStyle="normal"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
